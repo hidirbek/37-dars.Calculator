@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(204, 199, 199);
+}
+.title{
+  text-align: center;
+}
+.calculator-wrapper{
+  background: #FFFFFF;
+  border-radius: 38px;
+
+}
+.calc_input-wrapper{
+
+}
+.calc-name{
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 63px;
+  color: #466C48;
+  padding-top:10px;
+  margin-left: 30px;
+}
+.result{
+
+}
+.calc-input{
+  padding: 20px;
+  width: 100%;
+  text-align: end;
+  outline: none;
+  border: none;
+  font-size: 40px;
+}
+.scroll{
+  width: 60px;
+  height: 3px;
+  background: #8CD790;
+  border-radius: 31px;
+  margin: 8px auto;
+}
+.calc-functions{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+  background: #D7FFF1;
+  align-items:center;
+  padding: 20px;
+  border-radius: 12px 12px 38px 38px;
+}
+.calc-button{
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 15px;
+  font-weight: 400;
+}
+.calc-button:hover{
+  cursor: pointer;
+  background-color:#b4ebd8;
+}
+.calc-button:active{
+  background-color:#91d8bf;
+}
+.arithmetic-func{
+  font-weight: 500;
+  color: #8CD790;
+}
+.equal-btn{
+  background: #8CD790;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
