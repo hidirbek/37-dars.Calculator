@@ -19,30 +19,32 @@
         <div class="calc_input-wrapper">
           <h2 class="calc-name">Calcolatrice</h2>
           <span class="result"></span>
-          <input class="calc-input" type="text">
+          <input id="calc-input" class="calc-input"></input>
         </div>
-        <div class="scroll"></div>
-        <div class="calc-functions">
-          <button class="calc-button">C</button>
-          <button class="calc-button"><i class="fa-solid fa-delete-left"></i></button>
-          <button class="calc-button"><i class="fa-solid fa-percent"></i></button>
-          <button class="calc-button arithmetic-func">/</button>
-          <button class="calc-button">7</button>
-          <button class="calc-button">8</button>
-          <button class="calc-button">9</button>
-          <button class="calc-button arithmetic-func"><i class="fa-solid fa-xmark"></i></button>
-          <button class="calc-button">4</button>
-          <button class="calc-button">5</button>
-          <button class="calc-button">6</button>
-          <button class="calc-button arithmetic-func"><i class="fa-solid fa-minus"></i></button>
-          <button class="calc-button">1</button>
-          <button class="calc-button">2</button>
-          <button class="calc-button">3</button>
-          <button class="calc-button arithmetic-func"><i class="fa-solid fa-plus"></i></button>
-          <button class="calc-button functions">cos/log</button>
-          <button class="calc-button">0</button>
-          <button class="calc-button">,</button>
-          <button class="calc-button arithmetic-func equal-btn"><i class="fa-solid fa-equals"></i></button>
+        <div>
+          <div class="scroll"></div>
+          <div class="calc-functions">
+            <button onclick="clr()" class="calc-button clear-btn">C</button>
+            <button onclick="del()" class="calc-button delete-btn">&larr;</button>
+            <button onclick="calculate('%')" class="calc-button percent-btn">%</button>
+            <button onclick="calculate('/')" class="calc-button arithmetic-func">/</button>
+            <button onclick="calculate(7)" class="calc-button">7</button>
+            <button onclick="calculate(8)" class="calc-button">8</button>
+            <button onclick="calculate(9)" class="calc-button">9</button>
+            <button onclick="calculate('x')" class="calc-button arithmetic-func">x</i></button>
+            <button onclick="calculate(4)" class="calc-button">4</button>
+            <button onclick="calculate(5)" class="calc-button">5</button>
+            <button onclick="calculate(6)" class="calc-button">6</button>
+            <button onclick="calculate('-')" class="calc-button arithmetic-func">-</button>
+            <button onclick="calculate(1)" class="calc-button">1</button>
+            <button onclick="calculate(2)" class="calc-button">2</button>
+            <button onclick="calculate(3)" class="calc-button">3</button>
+            <button onclick="calculate('+')" class="calc-button arithmetic-func">+</i></button>
+            <button onclick="calculate('cos/log')" class="calc-button functions">cos/log</button>
+            <button onclick="calculate(0)" class="calc-button">0</button>
+            <button onclick="calculate(',')" class="calc-button">,</button>
+            <button onclick="result()" class="calc-button arithmetic-func equal-btn">=</button>
+          </div>
         </div>
 
       </div>
